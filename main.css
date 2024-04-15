@@ -88,7 +88,7 @@ body{
     list-style-type:none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap:1px;
+    column-gap:0.5em;
 }
 @keyframes slide_up{
     from{
@@ -200,14 +200,51 @@ h5{
     font-size:1.2rem;
 }
 .p_wrap{
+    align-items: center;
     text-align:center;
     border-radius:15px;
+    line-height: 5rem;
+    vertical-align: middle;
     background-color:purple;
-    width:5rem;
-    height:auto;
+    width:12rem;
+    height: 5rem;
     margin-inline:auto;
 }
-a{
+a:link{
     text-decoration: none;
     color:white;
+    font-size: 1.85rem;
+}
+a:visited{
+    text-decoration: none;
+    color:white;
+    font-size: 1.85rem;
+}
+.p_wrap:hover{
+    filter:brightness(1.1);
+    transform:scale(1.05);
+}
+.css-selector {
+    background: linear-gradient(208deg, #efffd5, #e7ffbf, #f7ffb5, #ffffff);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:45% 0%}
+    50%{background-position:56% 100%}
+    100%{background-position:45% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:45% 0%}
+    50%{background-position:56% 100%}
+    100%{background-position:45% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:45% 0%}
+    50%{background-position:56% 100%}
+    100%{background-position:45% 0%}
 }
