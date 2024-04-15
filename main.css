@@ -248,3 +248,8 @@ a:visited{
     50%{background-position:56% 100%}
     100%{background-position:45% 0%}
 }
+.large{
+    max-width:50%;
+    max-height:50%;
+
+}
