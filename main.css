@@ -251,5 +251,9 @@ a:visited{
 .large{
     max-width:50%;
     max-height:50%;
-
+    
+}
+image{
+    object-fit:fill;
+    margin-inline:auto;
 }
