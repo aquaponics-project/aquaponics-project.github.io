@@ -21,13 +21,14 @@ p{
 h2{
     text-align: center;
     font-family: sans-serif;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     background: -webkit-linear-gradient(0deg,#4574ff, #bb00ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 body{
-    background-color: linear-gradient(45deg,#878787,#00b73a);
+    background: linear-gradient(45deg,#ffffff,#ffe030);
+    font-family: sans-serif;
 }
 @keyframes slide{
     from {
@@ -74,17 +75,20 @@ body{
     align-items: center; 
     grid-template-columns: 1fr 1fr;
     column-gap: 5px;
-    margin-inline: 10em;
+    margin-inline: 5em;
     max-width: fit-content;
 }
 .text{
     font-family:sans-serif;
     padding-left: 10px;
-    font-size: 1.5em;
+    font-size: 1.25rem;
 }
 .rewards_list{
     margin-inline:auto;
     list-style-type:none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap:1px;
 }
 @keyframes slide_up{
     from{
@@ -98,13 +102,13 @@ body{
 }
 .reward_wrapper{
     background: linear-gradient(45deg,#aeff95,#70ffd2);
-    border-radius:10px
+    border-radius:10px;
+    
 }
 
 li.show_up{
     animation-name: slide_up;
     animation-duration:0.5s;
-    text-align: center;
     animation-fill-mode: forwards;
 }
 li.show_up:nth-child(1){
@@ -124,4 +128,86 @@ h3{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
+}
+.tier_title{
+    text-align: center;
+}
+.tier_info{
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    list-style: square;
+    margin:0;
+}
+h4{
+    font-family: sans-serif;
+    font-size:1.2rem;
+    text-align:center
+}
+h5{
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    padding-left: 2rem;
+}
+.goal_container{
+    margin-inline:auto;
+    width:75%;
+    height:0.75rem;
+    background-color: grey;
+    border-radius:5px;
+    align-items: left;
+}
+.goal{
+    background-color: chartreuse;
+    height:0.75rem;
+    border-radius:5px;
+    opacity:1;
+    width:25%;
+    transform-origin:left center;
+
+    animation-fill-mode: forwards;
+}
+.show_load{
+    animation-name:load-in;
+    animation-duration: 0.5s;
+}
+@keyframes load-in{
+    from{
+        transform:scale(0,1);
+        opacity:1;
+    }
+    to{
+        transform:scale(1,1);
+        opacity:1;
+    }
+}
+.goal2{
+    background-color: chartreuse;
+    height:0.75rem;
+    border-radius:5px;
+    opacity:1;
+    width:12.5%;
+    transform-origin:left center;
+    animation-fill-mode: forwards;
+}
+.section_4{
+    height:auto;
+}
+
+.quote_wrapper{
+    background-color: lightyellow;
+    text-align:center;
+    margin-inline:5%;
+    font-size:1.2rem;
+}
+.p_wrap{
+    text-align:center;
+    border-radius:15px;
+    background-color:purple;
+    width:5rem;
+    height:auto;
+    margin-inline:auto;
+}
+a{
+    text-decoration: none;
+    color:white;
 }
