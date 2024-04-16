@@ -29,6 +29,7 @@ h2{
 body{
     background: linear-gradient(45deg,#ffffff,#ffe030);
     font-family: sans-serif;
+    
 }
 @keyframes slide{
     from {
@@ -211,6 +212,9 @@ h5{
     height: 5rem;
     margin-inline:auto;
 }
+a{
+    pointer-events: none;
+}
 a:link{
     text-decoration: none;
     color:white;
@@ -249,14 +253,13 @@ a:visited{
     50%{background-position:56% 100%}
     100%{background-position:45% 0%}
 }
-.large{
+
+img{
     max-width:100%;
     max-height:100%;
-    
-}
-image{
-    object-fit:fill;
+    object-fit:contain;
     margin-inline:auto;
+    border-radius: 5px;
 }
 green{
     text-align: center;
@@ -266,17 +269,37 @@ green{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;   
 }
-.gallery_wrapper{
-    width:50%;
-    height:50%;
+.gallery{
+    display:flex;
+    width:500%;
+}
+
+.large{
+    max-width: 75%;
     margin-inline:auto;
+    display:block;
+}
+
+.gallery_wrapper{
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    display:flex;
+}
+.gallery_wrapper::-webkit-scrollbar{
+    height:0.5rem;
+}
+.gallery_wrapper::-webkit-scrollbar-thumb{
+    background-color: #777;
+}
+.gallery_wrapper::-webkit-scrollbar-track{
+    background-color: #bbb;
 }
 .gallery_item{
-    float:left;
+    flex:110%;
     padding:5px;
-    height:50%;
-    
+    scroll-snap-align: center;
+}
+
+iframe{
+    margin-inline:auto;
+    display:block;
 }
