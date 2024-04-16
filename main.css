@@ -15,7 +15,7 @@
 p{
     font-family: sans-serif;
     width:75%;
-    font-size:1.5rem;
+    font-size:1.6rem;
     margin-inline:auto;
 }
 h2{
@@ -262,7 +262,7 @@ img{
     max-height:100%;
     object-fit:contain;
     margin-inline:auto;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 green{
     text-align: center;
