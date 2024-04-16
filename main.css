@@ -212,6 +212,9 @@ h5{
     height: 5rem;
     margin-inline:auto;
 }
+quote{
+    font-size: 1.5rem;
+}
 a{
     pointer-events: none;
 }
@@ -302,4 +305,7 @@ green{
 iframe{
     margin-inline:auto;
     display:block;
+}
+big{
+    font-size: 120%;
 }
