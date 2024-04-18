@@ -264,6 +264,9 @@ img{
     margin-inline:auto;
     border-radius: 15px;
 }
+fund{
+    font-size: 1.2rem;
+}
 green{
     text-align: center;
     font-family: sans-serif;
@@ -274,7 +277,7 @@ green{
 }
 .gallery{
     display:flex;
-    width:500%;
+    width:900%;
 }
 
 .large{
