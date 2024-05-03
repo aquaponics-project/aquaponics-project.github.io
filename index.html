@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <head>
-    
+    <meta charset="utf-8"/>
     <script defer src="app.js">
     </script>
+    <title>Aquaponics @ Home</title>
+    <favicon src="Aquaponic @ Home.png"></favicon>
     <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 <body class="css-selector">
     <div class="section_1">
         <div class="slider"></div>
-        <h1 class="main">Aquaponics @ Home</h1>
+        <div class="header">
+            <div>
+                <img class="logo hidden hidden_left" src="Aquaponic @ Home.png">
+            </div>
+            <div><h1 class="main">Aquaponics @ Home</h1></div>
+            
+            
+        </div>
         <h2>Nature @ Home</h2>
         <div class="quote_wrapper"><quote><big>Living sustainably is difficult.</big>
             <br> Aside from changing our purchasing habits, many people also want to grow their own food at home. With small urban apartments, this dream seems unachieveable.</quote></div>
         
         <br/>
-        <h2>Promotional Video</h2>
+        <h2 class="promovideo">Promotional Video</h2>
         <iframe width="720" height="405" src="https://www.youtube-nocookie.com/embed/OpKtv0nb3CI?si=PmZ0W6B3RA81K2Od&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><div>
         <br/><image class="large" src="2.png"></image></div>
         <h2>Product Information</h2>
@@ -98,8 +107,8 @@
     </div>
     <div class="section_5">
         <h2>Gallery</h2>
-        <div class="gallery_wrapper">
-            <div class="gallery">
+        <div id="gallery_wrapper">
+            <div id="gallery">
                 <div class="gallery_item">
                     <image  src="1.png"></image>
                 </div>
@@ -115,17 +124,12 @@
                 <div class="gallery_item">
                     <image  src="nft1.png"></image>
                 </div>
-                <div class="gallery_item">
-                    <image  src="1.png"></image>
-                </div>
-                <div class="gallery_item">
-                    <image  src="1.png"></image>
-                </div>
-                <div class="gallery_item">
-                    <image  src="1.png"></image>
-                </div>
             </div>
+            
+            
         </div>
+        <button id="lastSlide">&#8249;</button>
+        <button id="nextSlide"> &#8250;</button>
     </div>
     <div class="section_6">
         <h2>3D Model Video</h2>

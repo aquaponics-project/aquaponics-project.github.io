@@ -4,8 +4,7 @@
 }
 .main{
     font-family: sans-serif;
-    text-align: center;
-    font-size: 5em;
+    font-size: 3.4em;
     background: -webkit-linear-gradient(0deg,#4574ff, #5bff55);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -22,7 +21,15 @@ h2{
     text-align: center;
     font-family: sans-serif;
     font-size: 2.5rem;
-    background: -webkit-linear-gradient(0deg,#4574ff, #bb00ff);
+    background: -webkit-linear-gradient(0deg,#1d55ff, #bb00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.promovideo{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    background: -webkit-linear-gradient(0deg,#ff53f9, #8400ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -275,34 +282,42 @@ green{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;   
 }
-.gallery{
+#gallery{
     display:flex;
     width:900%;
+    max-width:8000px;
+    max-height:560px;
 }
 
 .large{
-    max-width: 75%;
     margin-inline:auto;
     display:block;
+    
 }
 
-.gallery_wrapper{
+#gallery_wrapper{
     overflow-x: scroll;
-    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    max-width:1100px;
+    margin-inline:auto;
+    pointer-events: none;
 }
-.gallery_wrapper::-webkit-scrollbar{
+#gallery_wrapper::-webkit-scrollbar{
     height:0.5rem;
+    pointer-events: none;
 }
-.gallery_wrapper::-webkit-scrollbar-thumb{
+#gallery_wrapper::-webkit-scrollbar-thumb{
     background-color: #777;
+    pointer-events: none;
 }
-.gallery_wrapper::-webkit-scrollbar-track{
+#gallery_wrapper::-webkit-scrollbar-track{
     background-color: #bbb;
+    pointer-events: none;
 }
 .gallery_item{
     flex:110%;
     padding:5px;
-    scroll-snap-align: center;
+    margin-inline:auto
 }
 
 iframe{
@@ -311,4 +326,34 @@ iframe{
 }
 big{
     font-size: 120%;
+}
+.logo{
+    max-height:15rem;
+    max-width: 15rem;
+    float:right;
+}
+
+.header{
+ display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 1.5em;
+}
+button{
+    font-size: 5rem;
+    border-radius: 1rem;
+    padding: 2.5rem 2rem 2.5rem 2rem;
+    border:none;
+    opacity:80%;
+}
+#nextSlide{
+    float:right;
+    transform:translateY(-4.6em);
+}
+#lastSlide{
+    transform: translateY(-4.6em);
+}
+.section_5{
+    margin-inline:auto;
+    max-width: 1100px;
 }

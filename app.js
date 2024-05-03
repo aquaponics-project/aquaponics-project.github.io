@@ -2,7 +2,6 @@
 const hiddenElements = document.querySelectorAll(".hidden");
 const observer = new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>{
-        console.log(entry)
         if (entry.isIntersecting){
             if(entry.target.classList.contains('hidden_left')){
                 entry.target.classList.add("show_left");
@@ -27,3 +26,19 @@ const observer = new IntersectionObserver((entries)=>{
     })
 });
 hiddenElements.forEach((el)=>observer.observe(el));
+const galItem = document.querySelector(".gallery_item");
+var gal = document.getElementById("gallery_wrapper")
+
+let gal_pos = 1
+document.getElementById("nextSlide").addEventListener("click", function(e) {
+    const galWidth = galItem.clientWidth;
+    gal.scrollLeft+=(gal_pos%6<5)?galWidth:-5*galWidth;
+    gal_pos = (gal_pos==5)?1:(gal_pos + 1) % 6;
+    console.log(gal_pos);
+})
+document.getElementById("lastSlide").addEventListener("click", function(e) {
+    const galWidth = galItem.clientWidth;
+    gal.scrollLeft-=(gal_pos>1)?galWidth:-4*galWidth;
+    gal_pos =(gal_pos==1)? 5 : (gal_pos - 1) % 6
+    console.log(gal_pos);
+})
