@@ -338,6 +338,9 @@ big{
  align-items: center; 
  grid-template-columns: 1fr 1fr 1fr;
  column-gap: 1.5em;
+ width:90%;
+ margin-inline:auto;
+ justify-content: center;
 }
 button{
     font-size: 5rem;
